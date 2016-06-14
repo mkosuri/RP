@@ -2,9 +2,7 @@
 ## Responsive, bloat free, bootstrap powered admin style dashboard!
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/rdash/rdash-angular?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-rdash-angular is an AngularJS implementation of the RDash admin dashboard. The dashboard uses a small number of modules to get you started, along with some handy directives and controllers to speed up development using the dashboard.
-
-Check out the [live example](http://rdash.github.io/)!
+Reachrage plans is an AngularJS implementation of the reachrge plnas admin dashboard. The dashboard uses a small number of modules to get you started, along with some handy directives and controllers to speed up development using the dashboard.
 
 ## Usage
 ### Requirements
@@ -18,6 +16,8 @@ Check out the [live example](http://rdash.github.io/)!
 3. Install the Bower dependencies: `bower install`.
 4. Run the gulp build task: `gulp build`.
 5. Run the gulp default task: `gulp`. This will build any changes made automatically, and also run a live reload server on [http://localhost:8888](http://localhost:8888).
+ 
+For prduction it take dist file with compressed js file and compressed css file
 
 Ensure your preferred web server points towards the `dist` directory.
 
