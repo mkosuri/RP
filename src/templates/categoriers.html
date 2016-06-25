@@ -1,3 +1,4 @@
+
 <!-- <div class="row alerts-container" data-ng-controller="AlertsCtrl" data-ng-show="alerts.length">
   <div class="col-xs-12">
     <uib-alert data-ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</uib-alert>
@@ -11,13 +12,16 @@
   <!-- start nav bar pannel -->
   <div ng-include src="'templates/shared/nav.html'"></div>
   <!-- end nav bar pannel -->
+  
+  <!-- start nav bar pannel -->
   <div ng-include src="'templates/shared/info.html'"></div> 
+  <!-- end nav bar pannel -->
 
   <div class="row">
     <div class="col-lg-6">
       <rd-widget>
-        <rd-widget-header icon="fa-tasks" title="Regions">
-          <a href="#">Manage</a>
+        <rd-widget-header icon="fa-tasks" title="Categorier Name">
+          <a href="">REGIONS</a>
         </rd-widget-header>
         <rd-widget-body classes="medium no-padding">
           <div class="table-responsive">
@@ -42,57 +46,27 @@
     </div>
     <div class="col-lg-6">
       <rd-widget>
-        <rd-widget-header icon="fa-users" title="Operators">
-          <input type="text" placeholder="Search" class="form-control input-sm" />
+        <rd-widget-header icon="fa-users" title="New Categorier">
         </rd-widget-header>
         <rd-widget-body classes="medium no-padding">
-          <div class="table-responsive">
-            <table class="table">
-              <thead>
-                <tr><th class="text-center">ID</th><th>Username</th><th>Role</th><th>Account</th></tr>
-              </thead>
-              <tbody>
-                <tr><td class="text-center">1</td><td>Joe Bloggs</td><td>Super Admin</td><td>AZ23045</td></tr>
-                <tr><td class="text-center">2</td><td>Timothy Hernandez</td><td>Admin</td><td>AU24783</td></tr>
-                <tr><td class="text-center">3</td><td>Joe Bickham</td><td>User</td><td>AM23781</td></tr>
-              </tbody>
-            </table>
-          </div>
+        <form class="form-horizontal" style="padding-right: 44px;padding-left: 20px;">
+          <fieldset style="margin-top: 50px;">
+             <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">Name
+              </label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="inputEmail" placeholder="Categorie Name">
+              </div>
+            </div>
+            <div class="form-group" style="text-align: center;margin-left: -86px;">
+              <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
         </rd-widget-body>
       </rd-widget>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <rd-widget>
-        <rd-widget-header icon="fa-users" title="Plans Offers">
-          <input type="text" placeholder="Search" class="form-control input-sm" />
-        </rd-widget-header>
-        <rd-widget-body classes="medium no-padding">
-          <div class="table-responsive">
-            <table class="table">
-              <thead>
-                <tr><th class="text-center">ID</th><th>Username</th><th>Role</th><th>Account</th></tr>
-              </thead>
-              <tbody>
-                <tr><td class="text-center">1</td><td>Joe Bloggs</td><td>Super Admin</td><td>AZ23045</td></tr>
-                <tr><td class="text-center">2</td><td>Timothy Hernandez</td><td>Admin</td><td>AU24783</td></tr>
-                <tr><td class="text-center">3</td><td>Joe Bickham</td><td>User</td><td>AM23781</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </rd-widget-body>
-      </rd-widget>
-      </div>
-      <div class="col-lg-6">
-        <rd-widget>
-          <rd-widget-header icon="fa-cog fa-spin" title="Loading Directive">
-            <a href="http://tobiasahlin.com/spinkit/" target="_blank">SpinKit</a>
-          </rd-widget-header>
-          <rd-widget-body>
-            <rd-loading></rd-loading>
-          </rd-widget-body>
-        </rd-widget>
-      </div>
     </div>
 </div>
